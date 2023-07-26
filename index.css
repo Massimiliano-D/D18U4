@@ -16,6 +16,13 @@ h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
+h2 {
+  padding-inline: 35px;
+  font-size: 2rem;
+}
+footer > h2 {
+  padding-top: 5rem;
+}
 h3,
 p,
 h2,
@@ -57,7 +64,7 @@ main .main-content {
 
 .cards {
   display: flex;
-  row-gap: 6px;
+  row-gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -86,7 +93,7 @@ main .main-content {
 .card-body p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .card-body button {
@@ -102,13 +109,34 @@ main .main-content {
   display: flex;
   justify-content: center;
 }
+.descrizione {
+  display: flex;
+  flex-direction: column;
+}
 .prezzo {
-  display: flex;
-  justify-content: end;
+  position: absolute;
+  left: 290px;
 }
-.descrizzione {
-  display: flex;
+.prezzo1 {
+  position: absolute;
+  left: 648px;
 }
+.bigBox {
+  border-radius: 30px;
+  background-color: rgb(254, 247, 226);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 40%;
+  }
+  .cards {
+    justify-content: space-around;
+  }
+}
+
 @media (max-width: 550px) {
   header {
     flex-direction: column;
@@ -124,16 +152,6 @@ main .main-content {
     display: none;
   }
 }
-
-@media (min-width: 768px) {
-  .card {
-    width: 40%;
-  }
-  .cards {
-    justify-content: space-around;
-  }
-}
-
 @media (min-width: 900px) {
   .card {
     width: 33.33%;
